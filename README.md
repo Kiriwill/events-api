@@ -8,9 +8,9 @@
 - gorm.io/gorm v1.25.10
 
 ## Estrutura do projeto
-- `/cmd` will have all the code that will be built and shipped as binaries. they are most likely to be named `main.go` and be found at `/cmd/<executable-name>/main.go`
-- `/pkg` will have the actual shared codebase of the project. all of the modules used by the entrypoints will come from this folder
-- `/scripts` will have useful utilitary scripts such as `dev.sh` that usually runs the project at a dev-local environment
+- /cmd abriga todo o código que será construído e enviado como binários. Ele está noemado como main.go e encontrados em /cmd/<nome-do-executável>/main.go
+- /pkg abriga a base de código compartilhada real do projeto. Todos os módulos usados pelos pontos de entrada virão desta pasta.
+- /scripts abriga scripts utilitários úteis, como dev.sh que executa o projeto em um ambiente de desenvolvimento local
 
 ## Instalação
 Com api no docker:
@@ -18,7 +18,7 @@ Com api no docker:
 docker compose up
 ```
 
-Sem api no docker:
+Sem API no docker (rodando atualmente só o db no container):
 ```bash 
 make dev
 ```
